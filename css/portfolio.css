@@ -1,0 +1,48 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+}
+
+/* Filter buttons */
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+
+.filter-button:focus,
+.filter-button:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Our portfolio */
+
+.our-portfolio .link {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.our-portfolio .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.our-portfolio .description {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+
+.our-portfolio .text {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--primary-white-color);
+}
