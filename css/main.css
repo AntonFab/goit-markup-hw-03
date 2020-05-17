@@ -44,7 +44,18 @@ body {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+/* Container */
+.container {
+  margin: 0 auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 
 /* Site navigation */
@@ -76,7 +87,13 @@ ul {
 }
 
 /* Hero */
+.hero {
+  text-align: center;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -167,8 +184,13 @@ footer {
 
 /* Buttons */
 .button {
+  display: inline-block;
+  border-radius: 4px;
   color: var(--secondary-text-color);
   background-color: var(--primary-white-color);
+  text-decoration: none;
+  padding: 10px 32px;
+  min-width: 200px;
 }
 
 .button.primary {
