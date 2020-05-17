@@ -4,6 +4,7 @@ color: #212121 - цвет вторичного текста
 color: #FFFFFF - белый цвет (фон и текст)
 color: #F5F4FA - вторичный цвет фона
 color: rgba(255, 255, 255, 0.6) - цвет текста в футтере
+color: #2F303A - фон футтера
 */
 
 :root {
@@ -12,6 +13,7 @@ color: rgba(255, 255, 255, 0.6) - цвет текста в футтере
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
 }
 
 body {
@@ -104,7 +106,14 @@ ul {
 }
 
 /* Section */
+
+.section {
+  padding: 94px;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -115,6 +124,8 @@ ul {
 /* Advantages */
 
 .advantages-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--secondary-text-color);
   font-weight: 700;
   line-height: 1.14;
@@ -122,12 +133,16 @@ ul {
 }
 
 .advantages-list .text {
+  margin-top: 0px;
+  margin-bottom: 0px;
   line-height: 1.71;
 }
 
 /* What we do */
 
 .we-do .title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: var(--primary-white-color);
   font-weight: 700;
   line-height: 1.14;
@@ -137,7 +152,13 @@ ul {
 
 /* Our team */
 
+.section.our-team {
+  background-color: var(--secondary-bg-color);
+}
+
 .team .worker {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -146,6 +167,8 @@ ul {
 }
 
 .team .profession {
+  margin-top: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -154,6 +177,7 @@ ul {
 /* Footer */
 footer {
   color: var(--primary-white-color);
+  background-color: var(--footer-bg-color);
 }
 
 .footer-logo {
@@ -165,6 +189,7 @@ footer {
 .footer-address {
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
 }
 
 .footer-contacts {
@@ -176,7 +201,14 @@ footer {
   color: var(--accent-color);
 }
 
+.call-action {
+  text-transform: uppercase;
+}
+
 .developed-by {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 21px;
   color: rgba(255, 255, 255, 0.4);
   font-size: 14px;
   line-height: 1.71;
