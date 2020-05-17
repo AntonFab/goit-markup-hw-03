@@ -62,11 +62,30 @@ ul {
 
 /* Site navigation */
 
-.site-nav a {
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 80px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondary-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav a:hover,
@@ -86,6 +105,28 @@ ul {
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-color);
+}
+
+.phone-email {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.phone-email .contacts + .contacts {
+  margin-left: 12px;
+}
+
+.phone-email > .contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+}
+
+.contacts .icon-env {
+  vertical-align: middle;
+}
+.contacts .icon-phone {
+  vertical-align: top;
 }
 
 /* Hero */
