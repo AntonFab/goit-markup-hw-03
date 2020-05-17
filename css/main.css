@@ -137,6 +137,9 @@ ul {
 .hero-title {
   margin-top: 0;
   margin-bottom: 46px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 646px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -165,6 +168,22 @@ ul {
 
 /* Advantages */
 
+.section.advantages {
+  padding-bottom: 0;
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-list .item {
+  width: 278px;
+}
+
+.advantages-list .item + .item {
+  margin-left: 30px;
+}
+
 .advantages-list .title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -182,6 +201,14 @@ ul {
 
 /* What we do */
 
+.we-do {
+  display: flex;
+}
+
+.we-do .item + .item {
+  margin-left: 30px;
+}
+
 .we-do .title {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -192,7 +219,19 @@ ul {
   text-transform: uppercase;
 }
 
+.item img {
+  display: block;
+}
+
 /* Our team */
+
+.team {
+  display: flex;
+}
+
+.team .item + .item {
+  padding-left: 30px;
+}
 
 .section.our-team {
   background-color: var(--secondary-bg-color);
@@ -216,18 +255,54 @@ ul {
   text-align: center;
 }
 
+.soc-networks {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.soc-networks .item + .item {
+  padding-left: 11px;
+}
+
+.item .icon-box {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+}
+
+.icon-box img {
+  padding: 11px;
+}
+
+/* Our clients */
+
+.our-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.our-clients .item + .item {
+  padding-left: 30px;
+}
+
 /* Footer */
 footer {
   color: var(--primary-white-color);
   background-color: var(--footer-bg-color);
 }
 
+.footer-nav {
+  display: flex;
+}
+
 .footer-logo {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.18;
-  margin-bottom: 10px;
-  margin-top: 0;
+  padding-bottom: 10px;
+  padding-top: 48px;
+  margin: 0;
 }
 
 .footer-address {
@@ -247,6 +322,7 @@ footer {
 
 .call-action {
   text-transform: uppercase;
+  margin: 0;
 }
 
 .developed-by {
