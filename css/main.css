@@ -57,7 +57,6 @@ ul {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 /* Site navigation */
@@ -139,6 +138,7 @@ ul {
   margin-bottom: 46px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
   width: 646px;
   color: var(--primary-white-color);
   font-weight: 900;
@@ -167,10 +167,6 @@ ul {
 }
 
 /* Advantages */
-
-.section.advantages {
-  padding-bottom: 0;
-}
 
 .advantages-list {
   display: flex;
@@ -229,8 +225,8 @@ ul {
   display: flex;
 }
 
-.team .item + .item {
-  padding-left: 30px;
+.team .item-team + .item-team {
+  margin-left: 30px;
 }
 
 .section.our-team {
@@ -283,7 +279,7 @@ ul {
 }
 
 .our-clients .item + .item {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 /* Footer */
@@ -297,6 +293,7 @@ footer {
 }
 
 .footer-logo {
+  display: block;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.18;
@@ -351,6 +348,7 @@ footer {
 }
 
 .hero > .button.primary {
+  margin-bottom: 200px;
   font-weight: 700;
   font-size: 16px;
   align-items: center;
