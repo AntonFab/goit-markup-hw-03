@@ -66,9 +66,12 @@ ul {
   align-items: center;
 }
 
+.navigation-block {
+  margin-left: 80px;
+}
+
 .site-nav {
   display: flex;
-  margin-left: 80px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -123,9 +126,11 @@ ul {
 
 .contacts .icon-env {
   vertical-align: middle;
+  display: inline-block;
 }
 .contacts .icon-phone {
   vertical-align: top;
+  display: inline-block;
 }
 
 /* Hero */
@@ -224,8 +229,17 @@ ul {
   display: flex;
 }
 
+.item-team {
+  padding-bottom: 24px;
+}
+
 .team .item-team + .item-team {
   margin-left: 30px;
+}
+
+.worker-photo {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .section.our-team {
@@ -233,7 +247,7 @@ ul {
 }
 
 .team .worker {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -253,7 +267,6 @@ ul {
 .soc-networks {
   display: flex;
   justify-content: center;
-  padding-bottom: 24px;
 }
 
 .soc-networks .item + .item {
@@ -261,7 +274,7 @@ ul {
 }
 
 .item .icon-box {
-  display: inline-block;
+  display: block;
   width: 44px;
   height: 44px;
 }
@@ -294,7 +307,6 @@ ul {
 
 .footer-address {
   padding-top: 48px;
-  padding-bottom: 18px;
 }
 
 .footer-logo {
@@ -314,6 +326,7 @@ ul {
 }
 
 .footer-contacts {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
@@ -378,4 +391,10 @@ ul {
   letter-spacing: 0.06em;
   margin-right: auto;
   margin-left: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
