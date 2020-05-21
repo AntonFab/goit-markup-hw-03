@@ -270,7 +270,7 @@ ul {
 }
 
 .soc-networks .item + .item {
-  padding-left: 11px;
+  margin-left: 11px;
 }
 
 .item .icon-box {
